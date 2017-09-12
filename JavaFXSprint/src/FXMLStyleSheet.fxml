@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -33,6 +34,11 @@
       </MenuBar>
    </top>
    <center>
-      <ImageView fx:id="paintImage" fitHeight="550.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="paintCanvas" height="550.0" width="750.0" />
+            <ImageView fx:id="paintImage" fitHeight="550.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
    </center>
 </BorderPane>
